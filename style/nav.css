@@ -12,6 +12,11 @@ nav {
     justify-content: space-between;
 }
 
+.nav_menu {
+    width: 100%;
+    line-height: 0.8;
+}
+
 .logo img {
     width: 17%;
 }

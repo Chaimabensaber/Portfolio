@@ -356,6 +356,34 @@ h1 {
     background-position: center;
 }
 
+.doi1 {
+    background-image: url('../img/doi-couv.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+}
+
+.doi2 {
+    background-image: url('../img/doi1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.doi3 {
+    background-image: url('../img/doi2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+}
+
+.doi4 {
+    background-image: url('../img/doi3.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+}
+
 .php1 {
     background-image: url('../img/php_couv.webp');
     background-repeat: no-repeat;

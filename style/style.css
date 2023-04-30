@@ -143,6 +143,11 @@ header section a:hover {
 	text-decoration: none;
 }
 
+.nav_menu {
+    width: 100%;
+    line-height: 0.8;
+}
+
 .btn_nav ul li {
     list-style: none;
     font-size: 3em;
@@ -207,7 +212,7 @@ main .projets .projet:nth-child(1) {
 }
 
 main .projets .projet:nth-child(2) {
-    background-image: url('../img/Oak_couv2.webp');
+    background-image: url('../img/doi-couv.webp');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

@@ -155,8 +155,15 @@ body {
     transform: translateX(4px);
 }
 
+.projet .div1 .filterzero {
+    background-image: url('../img/doi-couv.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .projet .div1 .filterun {
-    background-image: url('../img/MMI_couv2.webp');
+    background-image: url('../img/mmi-couv.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
