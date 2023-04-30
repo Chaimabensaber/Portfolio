@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Cosi Times Bold';
+    src: url('../font/CosiTimes-Bold.woff2') format('woff2'),
+    url('../font/CosiTimes-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 17%;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+    color: #f4efea;
+}
+
+header section h2 {
+    margin-top: 0%;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    font-weight: 400;
+}
+
+header section p {
+    border-top: 2px solid #F76236;
+    padding-top: 1%;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    font-weight: 400;
+}
+
+header section a {
+    color: #f4efea;
+    text-decoration: none;
+    background-color: #F76236;
+    padding: 0.8% 2.7%;
+    border-radius: 43px;
+    margin-top: 3%;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    border: 3px solid #F76236;
+    transition: ease 0.2s;
+}
+
+header section a:hover {
+    background-color: transparent;
+    border: 3px solid #F76236;
+    transition: ease 0.2s;
+}
+
+.circle_btn {
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #F76236;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 17px;
+	margin: 20px;
+	outline: none;
+	animation-duration: 300ms;
+	animation-timing-function: ease;
+}
+
+.circle_btn[data-open="true"] {
+	background-color: #000;
+	animation-name: scale;
+}
+
+.circle_btn[data-open="false"] {
+	transition: background-color 250ms linear;
+}
+
+@keyframes scale {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(100%);
+	}
+}
+
+.btn_nav {
+	background-color: #F76236;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	visibility: hidden;
+	clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+}
+
+.btn_nav[data-active="true"] {
+	visibility: visible;
+}
+
+.nav_item a {
+	color: #000;
+	text-decoration: none;
+}
+
+.btn_nav ul li {
+    list-style: none;
+    font-size: 3em;
+    font-family: 'Cosi Times Bold', system-ui, 'Segoe UI', sans-serif;
+    margin: 3%;
+}
+
+.btn_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-line {
+    position: relative;
+}
+
+.slide-line::before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+  
+.slide-line:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
